@@ -7,7 +7,7 @@ test('outils : versNombre convertit un texte en nombre, virgule acceptée', () =
   assert.equal(versNombre('2000'), 2000);
   assert.equal(versNombre('5,2'), 5.2);
   assert.equal(versNombre('3 000'), 3000);
-  assert.equal(versNombre('-1'), -1);
+  assert.equal(versNombre('-1'), -1);  
 });
 
 test('outils : versNombre renvoie NaN pour un texte vide ou non numérique', () => {
