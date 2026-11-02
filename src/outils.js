@@ -13,6 +13,7 @@ export function versNombre(texte) {
   }
   const nombre = Number(nettoye);
   return Number.isFinite(nombre) ? nombre : NaN;
+  
 }
 
 // Renvoie true si le texte est une date qui existe, écrite au format AAAA-MM-JJ.
