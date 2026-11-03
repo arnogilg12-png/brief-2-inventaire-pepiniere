@@ -3,13 +3,15 @@
 import { estDateValide, versNombre } from './outils.js';
 
 // Liste fermée des groupes botaniques acceptés, fournie et validée par le coach agronomie.
-export const GROUPES = ['angiosperme', 'gymnosperme'];
-
+ const GROUPES = ["angiosperme", "gymnosperme"];
+    console.log (GROUPES);
 // Renvoie une ligne de texte qui décrit le plant.
 // Exemple : 'N09 | pin | gymnosperme | 8 plants | 2026-10-24'
 export function formaterPlant(plant) {
-  throw new Error('TODO : coder formaterPlant dans src/registre.js');
+      console.log (plant);
+  //throw new Error('TODO : coder formaterPlant dans src/registre.js');
 }
+formaterPlant (plant)
 
 // Renvoie un texte avec un plant par ligne (lignes séparées par '\n'),
 // ou 'Aucun plant enregistré.' si la liste est vide.
