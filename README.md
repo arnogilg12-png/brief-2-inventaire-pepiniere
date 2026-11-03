@@ -4,7 +4,7 @@
 
 ## Contexte
 
-✏️ *En cinq à huit phrases : qui utilise l'outil (son métier, son geste professionnel), son besoin, ce qu'il saisit, ce que le programme lui affiche, ce que l'outil ne fait pas.*
+Un responsable d'une ppinière pédagogique recherche des informations sur ses plantes, notamment leur espèce, leur groupe botanique ainsi que la quantité disponible. Pour se faire il saisit id pour voir le code unique (N02 par exemple), le nom commun pour voir le nom de l'espèce (pin par exemple), le groupe pour voir groupe botanique (angiosperme ou gymnosperme), le nombre de plants pour voir la quantité (nombre entier: positif ou nul ), date relevé pour voir la date (au format AAA-MM-JJ) Gestes professionnel: observation des etiquettes etv des organes des plantes, classification, comptage dees plants et saisie de l'origine des relevés. 
 
 ## Prérequis et lancement
 
@@ -46,4 +46,4 @@ Sous PowerShell, si `npm` est bloqué : `npm.cmd test`.
 
 ## Auteur
 
-✏️ *Prénom NOM, compte GitHub. Entraide : avec qui, sur quoi.*
+✏️ *Arnaud Gildas BOGBE, arnogilg12, Entraide : avec qui, sur quoi.*
