@@ -16,3 +16,4 @@ export async function enregistrerJson(chemin, enregistrements) {
  return writeFile (chemin, fichiers_enregistres, "utf8")
   // throw new Error('TODO : coder enregistrerJson dans src/stockage.js');
 }
+
