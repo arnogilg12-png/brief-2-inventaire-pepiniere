@@ -7,25 +7,51 @@ export const SEUIL_STOCK_FAIBLE = 10;
 
 // Renvoie le nombre total de plants. Liste vide : 0.
 export function totalPlants(plants) {
-  throw new Error('TODO : coder totalPlants dans src/synthese.js');
+  return plants.reduce((somme, plant) => somme + plant.nombrePlants, 0);
 }
+ 
+  // throw new Error('TODO : coder totalPlants dans src/synthese.js');
 
 // Renvoie un objet : pour chaque groupe, le nombre d'espèces (de lignes) et le total de plants.
 // Exemple : { angiosperme: { especes: 8, plants: 222 }, gymnosperme: { especes: 2, plants: 18 } }
 // Liste vide : {} (un objet vide).
 export function syntheseParGroupe(plants) {
-  throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
+ const synthese = {};
+  for (const plant of plants) {
+    if (!synthese[plant.groupe]) {
+      synthese[plant.groupe] = { especes: 0, plants: 0 };
+    }
+    synthese[plant.groupe].especes += 1;
+    synthese[plant.groupe].plants += plant.nombrePlants;
+  }
+  return synthese;
 }
+ 
+  // throw new Error('TODO : coder syntheseParGroupe dans src/synthese.js');
 
 // Renvoie un NOUVEAU tableau avec les plants dont le nombre est INFÉRIEUR OU ÉGAL au seuil.
 // Exemple : stocksFaibles(donnees, 10) → N09 (8 plants) et N10 (10 plants)
 export function stocksFaibles(plants, seuil) {
-  throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
+  return plants.filter((plant) => plant.nombrePlants <= seuil);
 }
+
+  
+  //throw new Error('TODO : coder stocksFaibles dans src/synthese.js');
 
 // Renvoie le plant (la ligne d'inventaire) qui a le plus grand nombre de plants,
 // le premier rencontré en cas d'égalité, ou null si l'inventaire est vide.
 // Exemple : especeLaPlusAbondante(donnees) → N04 (tomate, 50 plants)
 export function especeLaPlusAbondante(plants) {
-  throw new Error('TODO : coder especeLaPlusAbondante dans src/synthese.js');
+ if (plants.length === 0) {
+    return null;
+  }
+  let maximum = plants[0];
+  for (const plant of plants) {
+    if (plant.nombrePlants > maximum.nombrePlants) {
+      maximum = plant;
+    }
+  }
+  return maximum;
+ 
+  // throw new Error('TODO : coder especeLaPlusAbondante dans src/synthese.js');
 }
