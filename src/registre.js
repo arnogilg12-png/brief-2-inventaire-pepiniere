@@ -3,7 +3,7 @@
 import { estDateValide, versNombre } from './outils.js';
 
 // Liste fermée des groupes botaniques acceptés, fournie et validée par le coach agronomie.
- const GROUPES = ['angiosperme', 'gymnosperme'];
+ export const GROUPES = ['angiosperme', 'gymnosperme'];
    
 // Renvoie une ligne de texte qui décrit le plant.
 // Exemple : 'N09 | pin | gymnosperme | 8 plants | 2026-10-24'
