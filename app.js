@@ -163,7 +163,7 @@ function actionSynthese(plants) {
         console.log('Choix inconnu : retour au menu.');
       }
     } catch (erreur) {
-      console.log(`Erreur : ${erreur.message}`);
+  console.log(`Erreur : ${erreur.message}`);
  }
  }
 
